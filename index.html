@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exams</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: #333;
+            line-height: 1.6;
+        }
+        .navbar {
+            background-color: #1a1a4a;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+        .navbar-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            color: white;
+            font-weight: 600;
+            font-size: 26px;
+        }
+        .logo-img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid white;
+        }
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+        }
+        .nav-links > div {
+            position: relative;
+        }
+        .nav-links a {
+            color: rgba(255,255,255,0.8);
+            text-decoration: none;
+            font-weight: 400;
+            transition: all 0.3s ease;
+            position: relative;
+            padding: 10px 0;
+        }
+        .nav-links a:hover {
+            color: white;
+        }
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 50%;
+            background-color: #4CAF50;
+            transition: all 0.3s ease;
+        }
+        .nav-links a:hover::after {
+            width: 100%;
+            left: 0;
+        }
+        .exams-dropdown {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            min-width: 220px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+            overflow: hidden;
+            animation: dropdown-slide 0.3s ease;
+            transform-origin: top center;
+            z-index: 1000;
+        }
+        @keyframes dropdown-slide {
+            from {
+                opacity: 0;
+                transform: scaleY(0.8);
+            }
+            to {
+                opacity: 1;
+                transform: scaleY(1);
+            }
+        }
+        .nav-links .exams-link:hover .exams-dropdown {
+            display: block;
+        }
+        .exams-dropdown a {
+            display: flex;
+            align-items: center;
+            padding: 12px 20px;
+            color: #333;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+        .exams-dropdown a:hover {
+            background-color: #f0f0f0;
+            color: #1a1a4a;
+        }
+        .exams-dropdown a::after {
+            display: none;
+        }
+        #video1 {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%;
+            min-height: 100%;
+            z-index: -1;
+        }
+        .title {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 130px;
+            -webkit-text-stroke: 1px #fff;
+            color: transparent;
+            background-image: linear-gradient(#fff, #fff);
+            background-repeat: no-repeat;
+            -webkit-background-clip: text;
+            background-position: -750px 0;
+            animation: backcolor 5s linear infinite alternate;
+        }
+        @keyframes backcolor { 
+            100% { background-position: 750px 0; } 
+        }
+    </style>
+</head>
+<body>
+   <header>
+    <nav class="navbar">
+        <div class="navbar-content">
+            <div class="logo">
+                <img src="NST logo.png" class="logo-img">
+                NSAT
+            </div>
+            <div class="nav-links">
+                <div class="exams-link">
+                    <a href="#">Exams</a>
+                    <div class="exams-dropdown">
+                        <a href="#">JEE</a>
+                        <a href="#">NEET</a>
+                        <a href="#">VITEE</a>
+                        <a href="#">UGEE</a>
+                        <a href="#">Scalar</a>
+                        <a href="#">Other Exams</a>
+                    </div>
+                </div>
+                <a href="#">Study-Material</a>
+                <a href="#">Test-Series</a>
+                <a href="#">Contact</a>
+            </div>
+        </div>
+    </nav>
+    <video autoplay muted loop id="video1">
+        <source src="27725-365890983.mp4" type="video/mp4">
+    </video>
+   </header>
+   <h1 class="title">Hola Future Engineers</h1>
+</body>
+</html>
