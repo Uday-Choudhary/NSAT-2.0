@@ -47,6 +47,7 @@ body {
     display: flex;
     align-items: center;
     gap: 30px;
+    
 }
 .nav-links > div {
     position: relative;
@@ -89,6 +90,7 @@ body {
     animation: dropdown-slide 0.3s ease;
     transform-origin: top center;
     z-index: 1000;
+
 }
 @keyframes dropdown-slide {
     from {
