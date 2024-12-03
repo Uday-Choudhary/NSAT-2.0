@@ -143,3 +143,19 @@ body {
 @keyframes backcolor { 
     100% { background-position: 750px 0; } 
 }
+section {
+    height: 100vh; /* Full screen height for smooth scrolling */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    scroll-snap-align: start;
+}
+html {
+    scroll-snap-type: y mandatory; /* Enable scroll snapping */
+    scroll-behavior: smooth;
+}
+iframe {
+    width: 100%;
+    height: 100vh;
+    border: none;
+}
