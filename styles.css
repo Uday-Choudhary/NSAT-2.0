@@ -134,7 +134,7 @@ body {
     font-size: 130px;
     -webkit-text-stroke: 1px #fff;
     color: transparent;
-    background-image: linear-gradient(#fff, #fff);
+    background-image: linear-gradient(#FFFFF0,#FFFDD0);
     background-repeat: no-repeat;
     background-clip:text;
     background-position: -750px 0;

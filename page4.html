@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam FAQs - Student Guide</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #3498db;
+            --background-color: #f0f4f8;
+            --card-background: #ffffff;
+            --text-color-dark: #2c3e50;
+            --text-color-light: #34495e;
+            --border-color: #e0e6ed;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            background-color: var(--background-color);
+            color: var(--text-color-dark);
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .header {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            border-radius: 10px 10px 0 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .header p {
+            font-weight: 300;
+            opacity: 0.9;
+        }
+
+        .faq-section {
+            background-color: var(--card-background);
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-bottom: 1.5rem;
+            overflow: hidden;
+        }
+
+        .faq-section h2 {
+            background-color: var(--background-color);
+            color: var(--primary-color);
+            padding: 1rem 1.5rem;
+            border-bottom: 2px solid var(--border-color);
+            font-size: 1.3rem;
+            display: flex;
+            align-items: center;
+        }
+
+        .faq-section h2 i {
+            margin-right: 10px;
+        }
+
+        .faq-item {
+            padding: 1.25rem 1.5rem;
+            border-bottom: 1px solid var(--border-color);
+            transition: background-color 0.3s ease;
+        }
+
+        .faq-item:hover {
+            background-color: rgba(52, 152, 219, 0.05);
+        }
+
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+
+        .faq-item h3 {
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+            font-weight: 600;
+        }
+
+        .faq-item p {
+            color: var(--text-color-light);
+        }
+
+        .faq-item ul {
+            list-style-type: none;
+            padding-left: 1.5rem;
+        }
+
+        .faq-item ul li {
+            position: relative;
+            margin-bottom: 0.5rem;
+        }
+
+        .faq-item ul li::before {
+            content: '•';
+            color: var(--primary-color);
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 1rem;
+            }
+
+            .header h1 {
+                font-size: 2rem;
+            }
+
+            .faq-section h2 {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Exam FAQs</h1>
+            <p>Your comprehensive guide to exam preparation and rules</p>
+        </div>
+
+        <div class="faq-section">
+            <h2><i class="fas fa-laptop"></i>Technical Issues</h2>
+            <div class="faq-item">
+                <h3>Internet Disconnection</h3>
+                <p>Notify your instructor or the exam coordinator immediately via email or the provided communication channel. Most platforms have an auto-save feature, so your progress may be preserved.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Exam Platform Not Loading</h3>
+                <p>Try these steps:</p>
+                <ul>
+                    <li>Check your internet connection.</li>
+                    <li>Clear the browser cache and cookies.</li>
+                    <li>Try a different browser.</li>
+                    <li>Restart your device.</li>
+                    <li>Contact technical support if problems persist.</li>
+                </ul>
+            </div>
+            <div class="faq-item">
+                <h3>Power Outage</h3>
+                <p>Inform your instructor or invigilator as soon as possible. Some exams allow rescheduling or provide a window to reattempt based on valid reasons.</p>
+            </div>
+        </div>
+
+        <div class="faq-section">
+            <h2><i class="fas fa-book"></i>Exam Rules</h2>
+            <div class="faq-item">
+                <h3>Tab and Application Switching</h3>
+                <p>Do not switch tabs or use other applications during the exam. Such actions may be flagged as suspicious activity.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Exam Breaks</h3>
+                <p>Check exam rules carefully. In proctored exams, leaving your seat may be prohibited. Plan your time to avoid breaks if they are not allowed.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Allowed Tools</h3>
+                <p>Tool usage depends on exam guidelines. Always refer to instructions provided before the exam starts.</p>
+            </div>
+        </div>
+
+        <div class="faq-section">
+            <h2><i class="fas fa-question-circle"></i>Exam Content</h2>
+            <div class="faq-item">
+                <h3>Ambiguous Questions</h3>
+                <p>Attempt the question based on your understanding and make a note to inform the instructor after the exam.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Accidental Submission</h3>
+                <p>Contact your instructor immediately. Some platforms allow re-entry or submission correction within the exam window.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Partial Marks</h3>
+                <p>Refer to exam instructions. MCQs may have no partial marks, but descriptive answers might be graded for partial credit.</p>
+            </div>
+        </div>
+
+        <div class="faq-section">
+            <h2><i class="fas fa-cogs"></i>Preparation and Setup</h2>
+            <div class="faq-item">
+                <h3>Pre-Exam Checklist</h3>
+                <ul>
+                    <li>Stable internet connection</li>
+                    <li>Fully charged device or power backup</li>
+                    <li>Required software compatibility</li>
+                    <li>Proper lighting and quiet environment</li>
+                </ul>
+            </div>
+            <div class="faq-item">
+                <h3>Asking Questions</h3>
+                <p>For most exams, avoid content-related questions. For technical issues, reach out to support as instructed.</p>
+            </div>
+        </div>
+
+        <div class="faq-section">
+            <h2><i class="fas fa-chart-bar"></i>Results and Feedback</h2>
+            <div class="faq-item">
+                <h3>Result Announcement</h3>
+                <p>Results will be announced according to exam guidelines. Check official communication channels like email or online portal.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
