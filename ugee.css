@@ -14,7 +14,7 @@ body {
 
 /* Navbar */
 .navbar {
-    background-color: #1a1a4a;
+    background-color: #1a1a4a; /* Teal */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     position: fixed;
     width: 100%;
@@ -79,7 +79,7 @@ body {
     height: 2px;
     bottom: 0;
     left: 50%;
-    background-color: #4CAF50;
+    background-color: #4CAF50; /* Bright teal */
     transition: all 0.3s ease;
 }
 
@@ -97,7 +97,7 @@ body {
     min-width: 220px;
     background-color: white;
     border-radius: 10px;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
     overflow: hidden;
     animation: dropdown-slide 0.3s ease;
     transform-origin: top center;
@@ -130,7 +130,7 @@ body {
 
 .exams-dropdown a:hover {
     background-color: #f0f0f0;
-    color: #1a1a4a;
+    color: #1a1a4a; /* Dark teal */
 }
 
 .exams-dropdown a::after {
@@ -153,29 +153,29 @@ main {
     padding: 30px 20px;
 }
 
-/* NEET Intro Section */
-.neet-intro {
+/* UGEE Intro Section */
+.ugeee-intro {
     text-align: center;
     padding: 60px 20px;
-    background: linear-gradient(180deg, #2575fc, #6a11cb); /* Gradient of blue and purple */
+    background: linear-gradient(180deg, #2575fc, #6a11cb); /* Teal to dark teal */
     color: #fff;
     border-radius: 20px;
     margin: 20px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
-.neet-intro h1 {
+.ugeee-intro h1 {
     font-size: 3rem;
     margin-bottom: 20px;
 }
 
-.neet-intro p {
+.ugeee-intro p {
     font-size: 1.2rem;
     margin-bottom: 30px;
 }
 
-.neet-intro .btn {
-    background-color: #6a11cb;
+.ugeee-intro .btn {
+    background-color: #6a11cb; /* Dark teal */
     color: white;
     text-decoration: none;
     padding: 10px 25px;
@@ -184,48 +184,48 @@ main {
     transition: background-color 0.3s ease;
 }
 
-.neet-intro .btn:hover {
-    background-color: #2575fc;
+.ugeee-intro .btn:hover {
+    background-color: #2575fc; /* Bright teal */
 }
 
-/* NEET Info Section */
-.neet-info {
+/* UGEE Info Section */
+.ugeee-info {
     text-align: center;
     padding: 40px 20px;
     color: #333;
 }
 
-.neet-info h2 {
+.ugeee-info h2 {
     font-size: 2.5rem;
     margin-bottom: 20px;
 }
 
-.neet-info p {
+.ugeee-info p {
     max-width: 800px;
     margin: 0 auto;
     font-size: 1rem;
     color: #555;
 }
 
-.neet-info ul {
+.ugeee-info ul {
     list-style-type: none;
     margin-top: 20px;
 }
 
-.neet-info ul li {
+.ugeee-info ul li {
     font-size: 1rem;
     margin-bottom: 10px;
     color: #666;
 }
 
 /* Resources Section */
-.neet-resources {
+.ugeee-resources {
     background: #fff;
     padding: 40px 20px;
     text-align: center;
 }
 
-.neet-resources h2 {
+.ugeee-resources h2 {
     font-size: 2.5rem;
     margin-bottom: 20px;
 }
@@ -254,7 +254,7 @@ main {
 
 .resource-item h3 {
     font-size: 1.5rem;
-    color: #2575fc;
+    color: #2575fc; /* Bright teal */
     margin-bottom: 10px;
 }
 
@@ -266,7 +266,7 @@ main {
 
 .resource-item a {
     display: inline-block;
-    background-color: #2575fc;
+    background-color: #2575fc; /* Bright teal */
     color: white;
     text-decoration: none;
     padding: 10px 20px;
@@ -276,20 +276,20 @@ main {
 }
 
 .resource-item a:hover {
-    background-color: #6a11cb;
+    background-color: #6a11cb; /* Dark teal */
 }
 
-/* Testimonials */
-.neet-testimonials {
+/* Testimonials Section */
+.ugeee-testimonials {
     background-color: #f9f9f9;
     padding: 50px 20px;
     text-align: center;
 }
 
-.neet-testimonials h2 {
+.ugeee-testimonials h2 {
     font-size: 2.5rem;
     margin-bottom: 20px;
-    color: #1a1a4a;
+    color: #1a1a4a; /* Teal */
 }
 
 .testimonial {
@@ -302,14 +302,14 @@ main {
     display: block;
     margin-top: 10px;
     font-weight: bold;
-    color: #1a1a4a;
+    color: #1a1a4a; /* Teal */
 }
 
 /* Footer */
 footer {
     text-align: center;
     padding: 20px;
-    background: linear-gradient(90deg, #6a11cb, #2575fc); /* Gradient for footer */
+    background: linear-gradient(90deg, #6a11cb, #2575fc); /* Dark teal to Bright teal */
     color: white;
     font-size: 14px;
 }
