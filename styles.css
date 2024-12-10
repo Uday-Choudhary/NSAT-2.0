@@ -7,6 +7,7 @@ body {
     font-family: 'Poppins', sans-serif;
     color: #333;
     line-height: 1.6;
+    background-color:#E0B1CB;
 }
 .navbar {
     background-color: #1a1a4a;
@@ -144,14 +145,14 @@ body {
     100% { background-position: 750px 0; } 
 }
 section {
-    height: 100vh; 
+    height: 100vh; /* Full screen height for smooth scrolling */
     display: flex;
     align-items: center;
     justify-content: center;
     scroll-snap-align: start;
 }
 html {
-    scroll-snap-type: y mandatory; 
+    scroll-snap-type: y mandatory; /* Enable scroll snapping */
     scroll-behavior: smooth;
 }
 iframe {
