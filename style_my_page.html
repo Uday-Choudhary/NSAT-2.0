@@ -5,6 +5,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="script.js"></script>
+    <style>
+        #main-container {
+    width: 100%;
+}
+
+#header {
+    display: block;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    background-color: lightgray;
+}
+
+#footer {
+    display: block;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    background-color: dimgray;
+}
+
+#navbar .nav-item {
+    display: inline-block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    transition: background-color 0.3s;
+}
+
+#navbar .nav-item:hower {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+#content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+#content .article-item {
+    flex: 1;
+    padding: 20px;   
+}
+
+#content #post1 {
+    flex: 2;
+}
+    </style>
 </head>
 <body>
   <section id="main-container">
