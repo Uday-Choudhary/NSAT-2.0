@@ -6,7 +6,7 @@
 body {
     font-family: 'Poppins', sans-serif;
     color: #333;
-    line-height: 1.6;
+    line-height: 1.5;
     background-color:#E0B1CB;
 }
 .navbar {
@@ -156,7 +156,7 @@ html {
     scroll-behavior: smooth;
 }
 iframe {
-    width: 100%;
+    width: 101%;
     height: 100vh;
     border: none;
 }
