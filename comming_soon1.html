@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -78,5 +78,223 @@
 
         createDots();
     </script>
+</body>
+</html> -->
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NSAT 2.0 - Page Not Found</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .navbar {
+            background-color: #1a1a1a;
+            color: white;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: white;
+            text-decoration: none;
+        }
+        
+        .main-content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem;
+            text-align: center;
+        }
+        
+        .error-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .error-title {
+            font-size: 8rem;
+            font-weight: bold;
+            color: #e74c3c;
+            margin-bottom: 1rem;
+            line-height: 1;
+        }
+        
+        .error-subtitle {
+            font-size: 2rem;
+            color: #333;
+            margin-bottom: 1.5rem;
+        }
+        
+        .error-message {
+            font-size: 1.1rem;
+            color: #666;
+            margin-bottom: 2rem;
+            line-height: 1.6;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 0.8rem 1.5rem;
+            background-color: #1a1a1a;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            margin: 0.5rem;
+        }
+        
+        .btn:hover {
+            background-color: #333;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .error-illustration {
+            max-width: 100%;
+            height: auto;
+            margin: 2rem 0;
+        }
+        
+        .footer {
+            background-color: #1a1a1a;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: auto;
+        }
+        
+        @media (max-width: 768px) {
+            .error-title {
+                font-size: 6rem;
+            }
+            
+            .error-subtitle {
+                font-size: 1.5rem;
+            }
+        }
+        
+        /* Animation for the 404 */
+        @keyframes float {
+            0% {
+                transform: translateY(0px);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+            100% {
+                transform: translateY(0px);
+            }
+        }
+        
+        .animated-404 {
+            animation: float 4s ease-in-out infinite;
+            display: inline-block;
+        }
+        
+        .svg-container {
+            margin: 2rem 0;
+        }
+        
+        .planet {
+            fill: #1a1a1a;
+        }
+        
+        .orbit {
+            fill: none;
+            stroke: #e74c3c;
+            stroke-width: 3;
+            stroke-dasharray: 10;
+            animation: dash 15s linear infinite;
+        }
+        
+        @keyframes dash {
+            to {
+                stroke-dashoffset: 1000;
+            }
+        }
+        
+        .satellite {
+            fill: #e74c3c;
+            animation: rotate 20s linear infinite;
+            transform-origin: center;
+        }
+        
+        @keyframes rotate {
+            from {
+                transform: rotate(0deg) translateX(120px) rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg) translateX(120px) rotate(-360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="navbar">
+        <a href="https://nsat-2-0.vercel.app/#" class="logo">NSAT </a>
+    </header>
+    
+    <main class="main-content">
+        <div class="error-container">
+            <div class="animated-404">
+                <h1 class="error-title">404</h1>
+            </div>
+            
+            <h2 class="error-subtitle">Page Not Found</h2>
+            
+            <div class="svg-container">
+                <svg width="200" height="200" viewBox="0 0 300 300">
+                    <circle cx="150" cy="150" r="80" class="planet" />
+                    <circle cx="150" cy="150" r="120" class="orbit" />
+                    <circle cx="150" cy="30" r="15" class="satellite" />
+                </svg>
+            </div>
+            
+            <p class="error-message">
+                The page you're looking for seems to have drifted into space. It might have been moved, deleted, or never existed in the first place.
+            </p>
+            
+            <div>
+                <a href="https://nsat-2-0.vercel.app/#" class="btn">Return Home</a>
+                <a href="javascript:history.back()" class="btn">Go Back</a>
+            </div>
+        </div>
+    </main>
+    
+    <footer class="footer">
+        <p>© 2025 NSAT 2.0. All rights reserved.</p>
+    </footer>
 </body>
 </html>
